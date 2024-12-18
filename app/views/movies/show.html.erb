@@ -1,5 +1,5 @@
 
-<form action="/modify_movie/<%= @the_movie.id %>"  method="post" data-turbo="false">
+<form action="/movies/<%= @the_movie.id %>"  method="patch" data-turbo="false">
 <div>
   <div>
     <h1>
@@ -14,7 +14,7 @@
       </div>
 
       <div>
-        <a href="/delete_movie/<%= @the_movie.id %>">
+        <a href="/movies/<%= @the_movie.id %>" data-turbo-method="delete">
           Delete movie
         </a>
       </div>
